@@ -25,3 +25,18 @@ cd fork_sync
 # Install dependencies
 pip install -r requirements.txt
 ```
+
+## Setting
+
+- [Developer Settings](https://github.com/settings/developers) にアクセス
+
+- **Personal access tokens** をタップして **Tokens (classic)** をタップ
+
+- **scopes** の **repo** をタップしTokenを生成
+
+```python
+# ===== 設定 =====
+TOKEN = "生成したTokenをセット"
+BRANCH_OVERRIDE = None
+# =================
+```
