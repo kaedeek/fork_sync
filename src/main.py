@@ -1,11 +1,16 @@
 from VersaLog import *
+from dotenv import load_dotenv
+
 import requests
 import time
+import os
 
-logger = VersaLog(enum="detailed", show_tag=True, tag="FORK_SYNC")
+load_dotenv()
+
+logger = VersaLog(enum="detailed", show_tag=True, tag=["GITHUB", "FORK_SYNC"])
 
 # ===== 設定 =====
-TOKEN = ""
+TOKEN = os.getenv("TOKEN")
 BRANCH_OVERRIDE = None
 # =================
 
