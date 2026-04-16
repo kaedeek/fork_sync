@@ -9,6 +9,7 @@
 fork_sync/
 ├── src/
 │   └── main.py
+├── .env
 ├── .gitignore
 ├── LICENSE
 ├── README.md
@@ -34,9 +35,8 @@ pip install -r requirements.txt
 
 - **scopes** の **repo** をタップしTokenを生成
 
-```python
-# ===== 設定 =====
-TOKEN = "生成したTokenをセット"
-BRANCH_OVERRIDE = None
-# =================
+- [**.env**](.env) ファイルに下記のように記載
+
+```
+TOKEN= <生成したトークン>
 ```
