@@ -1,7 +1,10 @@
 # GitHub Fork Sync Script
 
-これは、**Fork**してるリポジトリを一度に同期するスクリプトです。
-是非、使ってください～
+This is a script that allows you to sync multiple **forked** repositories at once.
+
+Feel free to give it a try! 🚀
+
+[Japanese](README-JP.md)
 
 ## Project structure
 
