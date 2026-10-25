@@ -12,7 +12,11 @@ logger = VersaLog(enum="detailed", show_tag=True, tag=["GITHUB", "FORK_SYNC"])
 # ===== 設定 =====
 TOKEN = os.getenv("TOKEN")
 BRANCH_OVERRIDE = None
-# =================
+# ================
+
+if not TOKEN:
+    logger.error("TOKEN is not set.")
+    raise RuntimeError("TOKEN is not set.")
 
 headers = {
     "Authorization": f"Bearer {TOKEN}",
