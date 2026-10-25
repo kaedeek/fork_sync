@@ -7,7 +7,11 @@ logger = VersaLog(enum="detailed", show_tag=True, tag="FORK_SYNC")
 # ===== 設定 =====
 TOKEN = ""
 BRANCH_OVERRIDE = None
-# =================
+# ================
+
+if not TOKEN:
+    logger.error("TOKEN is not set.")
+    raise RuntimeError("TOKEN is not set.")
 
 headers = {
     "Authorization": f"Bearer {TOKEN}",
